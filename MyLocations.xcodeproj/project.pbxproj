@@ -13,6 +13,7 @@
 		B69A6A072B77CC3B004D9317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69A6A052B77CC3B004D9317 /* Main.storyboard */; };
 		B69A6A092B77CC3D004D9317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69A6A082B77CC3D004D9317 /* Assets.xcassets */; };
 		B69A6A0C2B77CC3D004D9317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69A6A0A2B77CC3D004D9317 /* LaunchScreen.storyboard */; };
+		B69A6A142B797724004D9317 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69A6A132B797724004D9317 /* LocationDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B69A6A082B77CC3D004D9317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B69A6A0B2B77CC3D004D9317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B69A6A0D2B77CC3D004D9317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69A6A132B797724004D9317 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		B69A69F32B77CC3B004D9317 = {
 			isa = PBXGroup;
 			children = (
+				B69A6A132B797724004D9317 /* LocationDetailsViewController.swift */,
 				B69A69FE2B77CC3B004D9317 /* MyLocations */,
 				B69A69FD2B77CC3B004D9317 /* Products */,
 			);
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69A6A142B797724004D9317 /* LocationDetailsViewController.swift in Sources */,
 				B69A6A042B77CC3B004D9317 /* CurrentLocationViewController.swift in Sources */,
 				B69A6A002B77CC3B004D9317 /* AppDelegate.swift in Sources */,
 				B69A6A022B77CC3B004D9317 /* SceneDelegate.swift in Sources */,
