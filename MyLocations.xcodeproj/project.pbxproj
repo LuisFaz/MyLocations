@@ -83,10 +83,10 @@
 				B69A6A0D2B77CC3D004D9317 /* Info.plist */,
 				B69A6A132B797724004D9317 /* LocationDetailsViewController.swift */,
 				B6A77F9D2B79AF7400B81C25 /* CategoryPickerViewController.swift */,
+				B615E26C2B7D705400042B0C /* LocationsViewController.swift */,
 				B6A77F9F2B79B5E500B81C25 /* HudView.swift */,
 				B6A77FA22B79B6C800B81C25 /* Functions.swift */,
 				B615E2632B7C32B700042B0C /* MyLocations.xcdatamodeld */,
-				B615E26C2B7D705400042B0C /* LocationsViewController.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
