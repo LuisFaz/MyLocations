@@ -81,7 +81,7 @@ class LocationsViewController: UITableViewController {
     let sectionInfo = fetchedResultsController.sections![section]
     return sectionInfo.name
   }
-  
+
   override func tableView(
     _ tableView: UITableView,
     numberOfRowsInSection section: Int
@@ -112,6 +112,7 @@ class LocationsViewController: UITableViewController {
     if editingStyle == .delete {
       let location = fetchedResultsController.object(
         at: indexPath)
+      location.removePhotoFile()
       managedObjectContext.delete(location)
       do {
         try managedObjectContext.save()
