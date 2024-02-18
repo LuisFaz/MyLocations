@@ -14,6 +14,7 @@
 		B615E26F2B7D74CC00042B0C /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615E26E2B7D74CC00042B0C /* LocationCell.swift */; };
 		B615E2712B81529B00042B0C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615E2702B81529B00042B0C /* MapViewController.swift */; };
 		B615E2732B81611E00042B0C /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615E2722B81611E00042B0C /* UIImage+Resize.swift */; };
+		B615E2752B82290900042B0C /* String+AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615E2742B82290900042B0C /* String+AddText.swift */; };
 		B69A6A002B77CC3B004D9317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69A69FF2B77CC3B004D9317 /* AppDelegate.swift */; };
 		B69A6A022B77CC3B004D9317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69A6A012B77CC3B004D9317 /* SceneDelegate.swift */; };
 		B69A6A042B77CC3B004D9317 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69A6A032B77CC3B004D9317 /* CurrentLocationViewController.swift */; };
@@ -34,6 +35,7 @@
 		B615E26E2B7D74CC00042B0C /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		B615E2702B81529B00042B0C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B615E2722B81611E00042B0C /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		B615E2742B82290900042B0C /* String+AddText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AddText.swift"; sourceTree = "<group>"; };
 		B69A69FC2B77CC3B004D9317 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69A69FF2B77CC3B004D9317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B69A6A012B77CC3B004D9317 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,9 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				B69A69FF2B77CC3B004D9317 /* AppDelegate.swift */,
-				B69A6A012B77CC3B004D9317 /* SceneDelegate.swift */,
 				B69A6A032B77CC3B004D9317 /* CurrentLocationViewController.swift */,
-				B69A6A052B77CC3B004D9317 /* Main.storyboard */,
 				B69A6A082B77CC3D004D9317 /* Assets.xcassets */,
 				B69A6A0A2B77CC3D004D9317 /* LaunchScreen.storyboard */,
 				B69A6A0D2B77CC3D004D9317 /* Info.plist */,
@@ -92,9 +92,12 @@
 				B615E26C2B7D705400042B0C /* LocationsViewController.swift */,
 				B6A77F9F2B79B5E500B81C25 /* HudView.swift */,
 				B6A77FA22B79B6C800B81C25 /* Functions.swift */,
-				B615E2632B7C32B700042B0C /* MyLocations.xcdatamodeld */,
 				B615E26E2B7D74CC00042B0C /* LocationCell.swift */,
+				B69A6A052B77CC3B004D9317 /* Main.storyboard */,
 				B615E2702B81529B00042B0C /* MapViewController.swift */,
+				B615E2632B7C32B700042B0C /* MyLocations.xcdatamodeld */,
+				B69A6A012B77CC3B004D9317 /* SceneDelegate.swift */,
+				B615E2742B82290900042B0C /* String+AddText.swift */,
 				B615E2722B81611E00042B0C /* UIImage+Resize.swift */,
 			);
 			path = MyLocations;
@@ -183,6 +186,7 @@
 				B6A77FA32B79B6C800B81C25 /* Functions.swift in Sources */,
 				B69A6A002B77CC3B004D9317 /* AppDelegate.swift in Sources */,
 				B615E2682B7C357300042B0C /* Location+CoreDataClass.swift in Sources */,
+				B615E2752B82290900042B0C /* String+AddText.swift in Sources */,
 				B6A77F9E2B79AF7400B81C25 /* CategoryPickerViewController.swift in Sources */,
 				B69A6A022B77CC3B004D9317 /* SceneDelegate.swift in Sources */,
 			);
@@ -340,12 +344,15 @@
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app lets you keep track of interesting places. It needs access to the GPS\ncoordinates for your location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app lets you keep track of interesting places. It needs access to the GPS coordinates for your location.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Add photos to your locations";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "location-services";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,12 +377,15 @@
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app lets you keep track of interesting places. It needs access to the GPS\ncoordinates for your location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app lets you keep track of interesting places. It needs access to the GPS coordinates for your location.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Add photos to your locations";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "location-services";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
